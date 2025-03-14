@@ -7,6 +7,9 @@ gcc toolchain:
 	diffutils,file,autoconf,automake,libtool,
 	m4,libxcb-devel,libxcb-devel,libssl-devel,
 	libcurl-devel,libpng-devel,libffi-devel,
+
+Repo:
+	git
 	
 
 python toolchain
