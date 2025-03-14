@@ -15,7 +15,12 @@ gcc toolchain:
 	libavcodec-devel
 	cmake
 	libavformat-devel
-l	ibswscale-devel
+	libswscale-devel
+
+	libopencv-devel
+	liblapack-devel
+	libgtk3-devel
+	libgtk2.0-devel
 	
 Repo:
 	git
