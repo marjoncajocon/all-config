@@ -1,0 +1,15 @@
+#window7 above
+setup-x86_64.exe --allow-unsupported-windows --site http://ctm.crouchingtigerhiddenfruitbat.org/pub/cygwin/circa/64bit/2024/01/30/231215 --no-verify
+
+
+gcc toolchain:
+	gcc-core,gcc-g++,make,gdb,binutils,patch,
+	diffutils,file,autoconf,automake,libtool,
+	m4,libxcb-devel,libxcb-devel,libssl-devel,
+	libcurl-devel,libpng-devel,libffi-devel,
+	
+
+python toolchain
+	python39,python39-devel,python39-setuptol,
+	python39-pip,python39-virtualenv,pytho39-cffi,
+	python39-crytography
