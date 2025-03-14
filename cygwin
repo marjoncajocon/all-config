@@ -41,6 +41,7 @@ python toolchain
 
 python env:
 	pip install --upgrade pip setuptools wheel
+	pip install cffi
 
 building pyqt5:
 	pip install sip
