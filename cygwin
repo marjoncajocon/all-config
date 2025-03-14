@@ -25,6 +25,8 @@ gcc toolchain:
 
 	libgstreamer1.0-devel
 	libopenexr-devel
+	make
+	automake
 
 Repo:
 	git
