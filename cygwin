@@ -13,3 +13,6 @@ python toolchain
 	python39,python39-devel,python39-setuptol,
 	python39-pip,python39-virtualenv,pytho39-cffi,
 	python39-crytography
+
+building pyqt5:
+	pip install sip
