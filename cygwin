@@ -38,6 +38,10 @@ python toolchain
 	python39-crytography
 	python39-openssl
 
+
+python env:
+	pip install --upgrade pip setuptools wheel
+
 building pyqt5:
 	pip install sip
 
