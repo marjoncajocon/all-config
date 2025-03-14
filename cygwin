@@ -13,6 +13,7 @@ gcc toolchain:
 	libjpeg-devel,
 	libtiff-devel,
 	libavcodec-devel
+	cmake
 	
 Repo:
 	git
