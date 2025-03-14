@@ -21,7 +21,11 @@ gcc toolchain:
 	liblapack-devel
 	libgtk3-devel
 	libgtk2.0-devel
-	
+
+
+	libgstreamer1.0-devel
+	libopenexr-devel
+
 Repo:
 	git
 	
