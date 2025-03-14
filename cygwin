@@ -14,6 +14,8 @@ gcc toolchain:
 	libtiff-devel,
 	libavcodec-devel
 	cmake
+	libavformat-devel
+l	ibswscale-devel
 	
 Repo:
 	git
