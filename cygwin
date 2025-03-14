@@ -42,5 +42,5 @@ building pyqt5:
 
 building other:
 	pip install Pillow
-	
+	pip install cryptography==3.3.2 #last c release version build, above version is made in rust
 	
