@@ -30,6 +30,10 @@ gcc toolchain:
 
 
 	libxmlsec1-openssl-devel
+
+	python3-cv2
+	libopencv2.4
+
 Repo:
 	git
 	
