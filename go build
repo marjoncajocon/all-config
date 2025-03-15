@@ -8,4 +8,6 @@ Go Language building:
   env after building 1.4:
 	  GOROOT_BOOTSTRAP=go1.4/go # this value change based on building tree version of go language
     
-  
+
+   final set the proxy: 
+	go env -w GOPROXY=https://proxy.golang.org,direct
