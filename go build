@@ -11,3 +11,4 @@ Go Language building:
 
    final set the proxy: 
 	go env -w GOPROXY=https://proxy.golang.org,direct
+	go mod tidy
