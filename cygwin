@@ -34,6 +34,12 @@ gcc toolchain:
 	python3-cv2
 	libopencv2.4
 
+	bison
+	flex
+	libgmp-devel
+	libmpfr-devel
+	libmpc-devel
+
 Repo:
 	git
 	
