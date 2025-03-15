@@ -62,4 +62,12 @@ building other:
 	pip install Pillow
 	pip install cryptography==3.3.2 #last c release version build, above version is made in rust
 
+
+
+for go building:
 	
+	make
+	c/c++
+
+	
+	GOROOT_BOOTSTRAP=go1.4/go     
