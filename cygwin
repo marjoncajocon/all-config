@@ -28,6 +28,8 @@ gcc toolchain:
 	make
 	automake
 
+
+	libxmlsec1-openssl-devel
 Repo:
 	git
 	
