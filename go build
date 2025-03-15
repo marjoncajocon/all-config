@@ -4,8 +4,7 @@ Go Language building:
 	c/c++
   window: gcc 4.9 to support win7
 
-  env: 
-    CGO_CFLAGS=-std=c11 # or c99
+
   env after building 1.4:
 	  GOROOT_BOOTSTRAP=go1.4/go # this value change based on building tree version of go language
     
