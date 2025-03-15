@@ -10,5 +10,8 @@ Go Language building:
     
 
    final set the proxy: 
+	GOROOT=/usr/go-> [ bin, src, misc, pkg] #user pkg
+	GOPATH=/home/go->pkg # user pkg
+
 	go env -w GOPROXY=https://proxy.golang.org,direct
 	go mod tidy
