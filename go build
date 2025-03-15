@@ -13,5 +13,6 @@ Go Language building:
 	GOROOT=/usr/go-> [ bin, src, misc, pkg] #user pkg
 	GOPATH=/home/go->pkg # user pkg
 
+	CGO_ENABLED=1
 	go env -w GOPROXY=https://proxy.golang.org,direct
 	go mod tidy
