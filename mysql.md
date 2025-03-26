@@ -9,6 +9,16 @@
   * CREATE USER 'username'@'%' IDENTIFIED BY 'password';
 
 
+# LIST PRIVILEGES:
+  * SELECT: Read data from the table.
+  * INSERT: Add data to the table.
+  * UPDATE: Modify existing data in the table.
+  * DELETE: Remove data from the table.
+  * ALL PRIVILEGES: Grants all permissions (use this with caution).
+
+
+# GRANT SPECIFIC ROLE
+  * GRANT SELECT, INSERT ON yourdatabase.yourtable TO 'username'@'%';
 
 # grant all database
   * GRANT ALL PRIVILEGES ON *.* TO 'username'@'192.%';
