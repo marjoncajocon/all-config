@@ -1,11 +1,11 @@
-#create account:
+# create account:
   CREATE USER 'admin'@'192.%' IDENTIFIED BY 'mypassword';
   GRANT ALL PRIVILEGES ON `MyDatabase`.* TO 'admin'@'192.%';
   GRANT ALL PRIVILEGES ON `MyDatabase`.* TO 'admin'@'192.%';
   FLUSH PRIVILEGES;
   EXIT;
 
-#account for all IP:
+# account for all IP:
   CREATE USER 'username'@'%' IDENTIFIED BY 'password';
 
 
@@ -18,18 +18,18 @@ GRANT ALL PRIVILEGES ON *.* TO 'username'@'192.%';
 
 
 
-#REMOVING USER:
+# REMOVING USER:
   DROP USER 'username'@'192.%';
   FLUSH PRIVILEGES;
   EXIT;
 
 
 
-#REMOVING PRIVILEGES:
+# REMOVING PRIVILEGES:
   REVOKE <privilege> ON <database>.* FROM 'username'@'host';
 
 
-  *sample:
+  * sample:
     REVOKE SELECT, INSERT ON yourdatabase.* FROM 'username'@'192.%';
 
     # all privilege remove
