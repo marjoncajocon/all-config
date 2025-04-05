@@ -33,6 +33,8 @@ func main() {
 
 			json.NewDecoder(r.Body).Decode(&payload)
 
+			auth := r.Header.Get("X-Auth")
+			fmt.Println(auth)
 			fmt.Println(payload)
 		}
 		
