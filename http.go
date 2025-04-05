@@ -1,5 +1,3 @@
-/// go lang basic http
-
 package main
 
 import (
@@ -22,7 +20,9 @@ func main() {
 		rw.Write([]byte("Hello World"))
 	})
 
-	http.HandleFunc("/api/test", func(w http.ResponseWriter, r *http.Request) {
+	http.HandleFunc("/api/test", func(rw http.ResponseWriter, r *http.Request) {
+		rw.Header().Add("Content-Type", "application/json")
+		rw.Header().Add("Access-Control-Allow-Origin", "*")
 
 		if r.Method == "POST" {
 			
