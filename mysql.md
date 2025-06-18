@@ -1,3 +1,8 @@
+#for mysqld initial storage of the data folder
+
+mysqld --initialize --datadir=/marjoncajocon/Desktop/app/mariadb-10.11.13-linux-systemd-x86_64/data
+
+
 # create account:
   * CREATE USER 'admin'@'192.%' IDENTIFIED BY 'mypassword';
   * GRANT ALL PRIVILEGES ON `MyDatabase`.* TO 'admin'@'192.%';
