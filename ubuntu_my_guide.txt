@@ -29,7 +29,7 @@ ssh username@server_ip
         Exec=/path/to/your/executable
         Icon=/path/to/your/icon.png
         Type=Application
-        
+---- end desktop icon ---        
         
         
         
