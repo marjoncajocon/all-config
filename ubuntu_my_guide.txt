@@ -168,3 +168,6 @@ sudo apt clean
 
 --------------------- configuration of the graphical user interface in ubuntu or linux --------------------------
 -> nano /etc/default/grub
+
+------ this is the content of grub must be added to turn on touchpad of laptop ----------------------------------
+ GRUB_CMDLINE_LINUX_DEFAULT="quiet splash pci=nocrs"
