@@ -171,3 +171,5 @@ sudo apt clean
 
 ------ this is the content of grub must be added to turn on touchpad of laptop ----------------------------------
  GRUB_CMDLINE_LINUX_DEFAULT="quiet splash pci=nocrs"
+ GRUB_CMDLINE_LINUX="initcall_blacklist=elants_i2c_driver_init"
+-------------------------- end content grub for touch pad support ----------------
