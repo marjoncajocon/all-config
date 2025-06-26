@@ -24,28 +24,28 @@ ssh username@server_ip
 
 ---- start for desktop icon
 [Desktop Entry]
-        Name=Application Name
-        Comment=Brief description of the application
-        Exec=/path/to/your/executable
-        Icon=/path/to/your/icon.png
-        Type=Application
+Name=Application Name
+Comment=Brief description of the application
+Exec=/path/to/your/executable
+Icon=/path/to/your/icon.png
+Type=Application
 ---- end desktop icon ---        
         
         
         
         
-        then filename must be myapp.desktop
-        
-        
-        
-        
-        
-        
-       # Add 
-       sudo chown -R marjon:marjon /usr/local/mysql/data
-       
-       
-       /path/to/mariadb/bin/mysqld --initialize --user=mysql --datadir=/usr/local/mysql/data
+then filename must be myapp.desktop
+
+
+
+
+
+
+# Add 
+sudo chown -R marjon:marjon /usr/local/mysql/data
+
+
+/path/to/mariadb/bin/mysqld --initialize --user=mysql --datadir=/usr/local/mysql/data
        
        
        
