@@ -161,7 +161,11 @@ sudo dpkg --configure -a
 sudo apt autoremove -y
 sudo apt clean
 
-
+/// copy this for online command:
+sudo apt --fix-broken install
+sudo dpkg --configure -a
+sudo apt autoremove -y
+sudo apt clean
 
 ---------------------- to play youtube live and facebookk or any live to suppport codecs --------------------------------
 
