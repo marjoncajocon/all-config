@@ -153,9 +153,11 @@ sudo dpkg --configure -a
 
 
 sudo apt update
+
+sudo apt upgrade -y
+
 sudo apt --fix-broken install
 sudo dpkg --configure -a
-sudo apt upgrade -y
 sudo apt autoremove -y
 sudo apt clean
 
