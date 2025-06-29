@@ -41,13 +41,13 @@ then filename must be myapp.desktop
 
 
 
-# Add 
-sudo chown -R marjon:marjon /usr/local/mysql/data
+# MARIADB IN PORTABLE FORMAT in linux
 
+# init the data folder
+./mysqld --datadir=/usr/local/mysql/data
+# instal the initial database
+./scripts/mysql_install_dbscripts/mysql_install_db       
 
-/path/to/mariadb/bin/mysqld --initialize --user=mysql --datadir=/usr/local/mysql/data
-       
-       
        
 # create Service in Linux
 
