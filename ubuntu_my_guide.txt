@@ -8,6 +8,12 @@ ALTER USER 'root'@'localhost' IDENTIFIED BY 'new_password';
 EXIT;
 sudo systemctl restart mysql
 
+---- working with phpmyadmin
+# config.sample.inc.php rename to config.inc.php
+# add this $cfg['Servers'][$i]['socket'] = '/tmp/mysql.sock'; in config
+# to show that config in mysql type in terminal: SHOW VARIABLES LIKE 'socket';
+-------------- end 
+
 ---- for remote ssh
 sudo apt update
 sudo apt install openssh-server
