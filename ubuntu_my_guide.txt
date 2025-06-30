@@ -1,3 +1,13 @@
+#--- root mysql reset password
+sudo systemctl stop mariadb
+-- run this in separate table
+sudo mysqld_safe --skip-grant-tables &
+mysql -u root
+FLUSH PRIVILEGES;
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'new_password';
+EXIT;
+sudo systemctl restart mysql
+
 ---- for remote ssh
 sudo apt update
 sudo apt install openssh-server
