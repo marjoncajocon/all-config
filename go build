@@ -16,3 +16,14 @@ Go Language building:
 	CGO_ENABLED=1
 	go env -w GOPROXY=https://proxy.golang.org,direct
 	go mod tidy
+
+
+# cgo golang crosscompile using the zig lang
+
+SET CGO_ENABLED=1 
+SET GOOS=linux 
+SET GOARCH=amd64 
+SET CC="zig cc -target x86_64-linux-musl"  // instead the path of the gcc mingw/ use zig for cross compilation
+SET CXX="zig c++ -target x86_64-linux-musl" /// 
+
+go build -o myprogram
