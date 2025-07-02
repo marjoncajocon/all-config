@@ -26,4 +26,9 @@ SET GOARCH=amd64
 SET CC="zig cc -target x86_64-linux-musl"  // instead the path of the gcc mingw/ use zig for cross compilation
 SET CXX="zig c++ -target x86_64-linux-musl" /// 
 
+
+/// from ubuntu to windows build
+SET CC="zig cc -target x86_64-windows-gnu"
+SET CXX="zig c++ -target x86_64-windows-gnu"
+
 go build -o myprogram
