@@ -178,3 +178,17 @@ sudo apt clean
  GRUB_CMDLINE_LINUX_DEFAULT="quiet splash pci=nocrs"
  GRUB_CMDLINE_LINUX="initcall_blacklist=elants_i2c_driver_init"
 -------------------------- end content grub for touch pad support ----------------
+
+
+
+
+#--------------- MOUNT AND UNMOUNT USB ---------------------#
+-- show list dist
+sudo fdisk -l
+-- create a folder for usb mostly found in /mnt
+sudo mkdir -p /mnt/usb
+-- mount /dev/sdb1 is found in using the fdisk -l command
+sudo mount /dev/sdb1 /mnt/usb
+-- unmount the usb
+sudo umount /mnt/usb
+#--------------- END MOUNT AND UNMOUNT USB------------------#
