@@ -1,0 +1,194 @@
+#--- root mysql reset password
+sudo systemctl stop mariadb
+-- run this in separate table
+sudo mysqld_safe --skip-grant-tables &
+mysql -u root
+FLUSH PRIVILEGES;
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'new_password';
+EXIT;
+sudo systemctl restart mysql
+
+---- working with phpmyadmin
+# config.sample.inc.php rename to config.inc.php
+# add this $cfg['Servers'][$i]['socket'] = '/tmp/mysql.sock'; in config
+# to show that config in mysql type in terminal: SHOW VARIABLES LIKE 'socket';
+-------------- end 
+
+---- for remote ssh
+sudo apt update
+sudo apt install openssh-server
+sudo systemctl enable ssh
+sudo systemctl start ssh
+
+
+sudo ufw allow ssh
+# turn on the firewall
+sudo ufw enable
+
+
+--- view all active port
+ss -tuln
+--- enabled if block the port
+sudo ufw allow 5000/tcp
+
+---- denied
+sudo ufw deny 5000/tcp
+
+ssh username@server_ip
+
+
+
+---- start for desktop icon
+[Desktop Entry]
+Name=Application Name
+Comment=Brief description of the application
+Exec=/path/to/your/executable
+Icon=/path/to/your/icon.png
+Type=Application
+---- end desktop icon ---        
+        
+        
+        
+        
+then filename must be myapp.desktop
+
+
+
+
+
+
+# MARIADB IN PORTABLE FORMAT in linux
+
+# init the data folder
+./mysqld --datadir=/usr/local/mysql/data
+# instal the initial database
+./scripts/mysql_install_dbscripts/mysql_install_db       
+
+       
+# create Service in Linux
+
+#------------ start file
+
+[Unit]
+Description=My Go Application
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/user/myapp
+Restart=on-failure
+User=john
+WorkingDirectory=/home/user/
+
+[Install]
+WantedBy=multi-user.target
+
+
+#---------- End File
+
+sudo nano /etc/systemd/system/myapp.service
+
+-- reload service to know the new service
+sudo systemctl daemon-reload
+
+-- enable and start the service
+sudo systemctl daemon-reload
+sudo systemctl enable myservice.service
+sudo systemctl start myservice.service
+
+
+--- to stop service
+sudo systemctl stop myapp.service
+sudo systemctl disable myapp.service
+
+#info
+You should edit the following parts in the systemd service file:
+
+    ExecStart  
+        Replace /path/to/your/myapp with the full path to your compiled binary.
+        Example: /home/user/myapp
+
+    User  
+        Replace your_username with the Linux username that should run the service.
+        Example: john
+
+    WorkingDirectory (optional)  
+        Set this to the directory where your app runs or needs to operate from.
+        Example: /home/user/
+        
+        
+        
+        
+        
+        
+        
+        
+        
+  -------------- add windows shared to linux
+  
+  Install CIFS utilities:
+
+CopyRun
+sudo apt update
+sudo apt install cifs-utils
+Create a mount point:
+
+CopyRun
+sudo mkdir /mnt/shared
+Mount the shared folder:
+
+CopyRun
+sudo mount -t cifs -o username=your_username //windows_machine_ip/shared_folder /mnt/shared
+
+
+
+
+-------------------------- full repair command
+
+sudo rm /var/lib/dpkg/lock-frontend
+sudo rm /var/lib/dpkg/lock
+sudo rm /var/cache/apt/archives/lock
+sudo dpkg --configure -a
+
+
+sudo apt update
+
+sudo apt upgrade -y
+
+sudo apt --fix-broken install
+sudo dpkg --configure -a
+sudo apt autoremove -y
+sudo apt clean
+
+/// copy this for online command:
+sudo apt --fix-broken install
+sudo dpkg --configure -a
+sudo apt autoremove -y
+sudo apt clean
+
+---------------------- to play youtube live and facebookk or any live to suppport codecs --------------------------------
+
+-> sudo apt-get install ubuntu-restricted-extras
+// if gui is display to click okay click the tab to select ok
+
+--------------------- configuration of the graphical user interface in ubuntu or linux --------------------------
+-> nano /etc/default/grub
+
+------ this is the content of grub must be added to turn on touchpad of laptop ----------------------------------
+ GRUB_CMDLINE_LINUX_DEFAULT="quiet splash pci=nocrs"
+ GRUB_CMDLINE_LINUX="initcall_blacklist=elants_i2c_driver_init"
+-------------------------- end content grub for touch pad support ----------------
+
+
+
+
+#--------------- MOUNT AND UNMOUNT USB ---------------------#
+-- show list dist
+sudo fdisk -l
+-- create a folder for usb mostly found in /mnt
+sudo mkdir -p /mnt/usb
+-- mount /dev/sdb1 is found in using the fdisk -l command
+sudo mount /dev/sdb1 /mnt/usb
+-- unmount the usb
+sudo umount /mnt/usb
+#--------------- END MOUNT AND UNMOUNT USB------------------#
