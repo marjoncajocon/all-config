@@ -192,3 +192,12 @@ sudo mount /dev/sdb1 /mnt/usb
 -- unmount the usb
 sudo umount /mnt/usb
 #--------------- END MOUNT AND UNMOUNT USB------------------#
+
+
+# change gui and removed the default ubuntu genome
+
+sudo apt install xfce4
+sudo apt install lightdm
+sudo apt remove ubuntu-gnome-desktop gnome-shell
+sudo apt remove ubuntu-desktop
+sudo apt autoremove
