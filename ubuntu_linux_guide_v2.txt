@@ -197,6 +197,7 @@ sudo umount /mnt/usb
 # change gui and removed the default ubuntu genome
 
 sudo apt install xfce4 or sudo apt install lxde
+sudo apt install cinnamon-desktop-environment # in ubuntu
 sudo apt install lightdm
 sudo apt remove ubuntu-gnome-desktop gnome-shell
 sudo apt remove ubuntu-desktop
