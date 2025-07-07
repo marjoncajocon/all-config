@@ -202,3 +202,7 @@ sudo apt install lightdm
 sudo apt remove ubuntu-gnome-desktop gnome-shell
 sudo apt remove ubuntu-desktop
 sudo apt autoremove
+
+
+###### ----turn on hotspot
+nmcli device wifi hotspot ifname wlp2s0 ssid ServerHotspot password aaaaaaaa
