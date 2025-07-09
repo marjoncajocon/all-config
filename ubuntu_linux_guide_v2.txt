@@ -204,5 +204,9 @@ sudo apt remove ubuntu-desktop
 sudo apt autoremove
 
 
+######### check usage of the drive using cli
+df -h
+
+
 ###### ----turn on hotspot
 nmcli device wifi hotspot ifname wlp2s0 ssid ServerHotspot password aaaaaaaa
