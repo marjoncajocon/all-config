@@ -210,3 +210,15 @@ df -h
 
 ###### ----turn on hotspot
 nmcli device wifi hotspot ifname wlp2s0 ssid ServerHotspot password aaaaaaaa
+
+
+##### build essential
+sudo apt install cmake git curl wget unzip pkg-config \
+                 libtool autoconf automake \
+                 ninja-build gdb valgrind \
+                 manpages-dev
+
+sudo apt install libgtk-3-dev libgl1-mesa-dev libglu1-mesa-dev
+sudo apt install dkms linux-headers-$(uname -r)
+##### end build essential
+
