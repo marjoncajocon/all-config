@@ -222,3 +222,6 @@ sudo apt install libgtk-3-dev libgl1-mesa-dev libglu1-mesa-dev
 sudo apt install dkms linux-headers-$(uname -r)
 ##### end build essential
 
+#minimal desktop environment
+sudo apt install --no-install-recommends ubuntu-desktop
+
