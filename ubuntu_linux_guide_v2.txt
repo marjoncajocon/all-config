@@ -225,3 +225,6 @@ sudo apt install dkms linux-headers-$(uname -r)
 #minimal desktop environment
 sudo apt install --no-install-recommends ubuntu-desktop
 
+
+# to know who ping your computer
+sudo tcpdump -i ethX icmp and icmp[icmptype]=icmp-echo
