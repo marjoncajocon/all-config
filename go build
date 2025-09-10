@@ -33,3 +33,10 @@ SET CC=zig cc -target x86_64-windows-gnu
 SET CXX=zig c++ -target x86_64-windows-gnu
 
 go build -o myprogram
+
+
+
+offline build go lang
+go mod vendor
+go build -mod=vendor main.go
+go run -mod=vendor main.go
