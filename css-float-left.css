@@ -1,0 +1,6 @@
+/* container for batch float */
+.float-container::after {
+    content: "";
+    display: table;
+    clear: both; /* Clear the floats within the container */
+}
