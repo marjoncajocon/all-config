@@ -228,3 +228,9 @@ sudo apt install --no-install-recommends ubuntu-desktop
 
 # to know who ping your computer
 sudo tcpdump -i ethX icmp and icmp[icmptype]=icmp-echo
+
+#show memory information
+free -h
+
+# show the size of the folder
+du -h
