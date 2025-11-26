@@ -23,5 +23,10 @@
     "editor.fontVariations": false,
     "workbench.colorTheme": "monokai-charcoal (yellow)",
     "editor.cursorBlinking": "solid",
-    "editor.minimap.autohide": "scroll"
+    "editor.minimap.autohide": "scroll",
+    "workbench.colorCustomizations": {
+        "editorHoverWidget.background":"#00000048",
+        "editorHoverWidget.foreground":"#ffffffda",
+        "editorSuggestWidget.background":"#00000048"
+    }
 }
