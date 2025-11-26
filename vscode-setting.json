@@ -1,0 +1,27 @@
+{
+    "editor.fontSize": 12,
+    "editor.fontFamily": "ProggyDotted",
+    "editor.cursorStyle": "block",
+    "editor.lineHeight": 1.2,
+    "git.openRepositoryInParentFolders": "always",
+    "workbench.iconTheme": "Monokai Classic Icons",
+    "editor.codeActionsOnSave": {
+
+    },
+    "editor.dropIntoEditor.preferences": [
+
+
+    ],
+    "editor.indentSize": "tabSize",
+    "editor.language.brackets": [
+
+
+    ],
+    "editor.minimap.maxColumn": 40,
+    "editor.fontLigatures": true,
+    "editor.fontWeight": "normal",
+    "editor.fontVariations": false,
+    "workbench.colorTheme": "monokai-charcoal (yellow)",
+    "editor.cursorBlinking": "solid",
+    "editor.minimap.autohide": "scroll"
+}
