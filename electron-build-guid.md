@@ -118,6 +118,7 @@ Your `.exe` file will be available in:
 ## Additional Notes
 - Ensure `index.html` exists in your project directory.
 - Customize `main.js` and `package.json` as needed for your app.
+- use latest nodejs because it does not affect elecctron 22 and does not affect version support
 
 ---
 
