@@ -1,26 +1,39 @@
-🚀 Building a Windows EXE App Using Electron 22
+---
+
+```markdown
+# 🚀 Building a Windows EXE App Using Electron 22
 
 Supports Windows Vista, 7, 10, 11
 
-✅ Step 1 — Create Project Folder
+---
+
+## Prerequisites
+- Node.js installed
+- Basic knowledge of command line
+
+---
+
+## Step-by-Step Guide
+
+### ✅ Step 1 — Create Project Folder
+```bash
 mkdir myapp
 cd myapp
+```
 
-✅ Step 2 — Install Electron 22
-
-Inside the myapp folder, run:
-
+### ✅ Step 2 — Install Electron 22
+Inside the `myapp` folder, run:
+```bash
 npm install electron@22 --save-dev
-
-
-or specify an exact version:
-
+```
+Or specify an exact version:
+```bash
 npm install electron@22.0.0 --save-dev
+```
 
-✅ Step 3 — Create main.js
-
-Create a file named main.js:
-
+### ✅ Step 3 — Create `main.js`
+Create a file named `main.js` with the following content:
+```javascript
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
 
@@ -47,21 +60,20 @@ app.on('window-all-closed', () => {
 app.on('activate', () => {
   if (BrowserWindow.getAllWindows().length === 0) createWindow();
 });
+```
 
-✅ Step 4 — Update package.json
+### ✅ Step 4 — Update `package.json`
+Replace or add the following in your `package.json`:
+```json
 {
   "name": "myapp",
   "version": "1.0.0",
-  "description": "",
   "main": "main.js",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@electron-forge/cli": "^6.x.x",
     "@electron-forge/maker-deb": "^6.x.x",
@@ -72,28 +84,41 @@ app.on('activate', () => {
   },
   "config": {
     "forge": {
-      // Additional forge configuration added by import
+      // Additional forge configuration
     }
   }
 }
+```
 
-✅ Step 5 — Build the EXE
+### ✅ Step 5 — Build the EXE
 
-Install Forge CLI:
-
+1. Install Forge CLI:
+```bash
 npm install --save-dev @electron-forge/cli
+```
 
-
-Import Forge setup:
-
+2. Import Forge setup:
+```bash
 npx electron-forge import
+```
 
-
-Build the Windows EXE:
-
+3. Build the Windows executable:
+```bash
 npm run make
+```
 
-
-Your .exe will appear in:
-
+Your `.exe` file will be available in:
+```
 /out/make/
+```
+
+---
+
+## Additional Notes
+- Ensure `index.html` exists in your project directory.
+- Customize `main.js` and `package.json` as needed for your app.
+
+---
+
+## License
+```
