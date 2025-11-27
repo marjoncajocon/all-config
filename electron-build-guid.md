@@ -119,6 +119,3 @@ Your `.exe` file will be available in:
 - Customize `main.js` and `package.json` as needed for your app.
 
 ---
-
-## License
-```
