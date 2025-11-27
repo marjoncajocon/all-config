@@ -1,4 +1,4 @@
-BUILDING application USING electron 22
+BUILDING application USING electron 22 (Last Version Support in windows 7)
 ---
 
 ```markdown
