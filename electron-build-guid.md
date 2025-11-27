@@ -4,7 +4,7 @@
 # 🚀 Building a Windows EXE App Using Electron 22
 
 Supports Windows Vista, 7, 10, 11
-
+```
 ---
 
 ## Prerequisites
