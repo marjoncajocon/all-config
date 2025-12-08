@@ -34,7 +34,8 @@ SET CXX=zig c++ -target x86_64-windows-gnu
 
 go build -o myprogram
 
-
+# clean cache
+go clean -cache
 
 offline build go lang
 go mod vendor
