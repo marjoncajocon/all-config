@@ -1,2 +1,20 @@
 #cli
 cloudflared tunnel --url http://localhost:8080
+
+
+register the domain:
+- register the domain
+- add the nameserver of the cloudflare suggested by cloudflare into the domain custome nameserver
+
+to create a tunel
+-go to the zero trust panel
+-then click network
+-then click connector
+-then click the create tunnel
+to add the local machine port
+-click on the tunel name created
+-click on edit
+-click published application routes
+-add published application routes
+note: you can add multiple subdomain for multiple local machine port
+-end of guide
