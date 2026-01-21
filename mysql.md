@@ -53,3 +53,8 @@ mysqld --initialize --datadir=/marjoncajocon/Desktop/app/mariadb-10.11.13-linux-
     REVOKE ALL PRIVILEGES ON *.* FROM 'username'@'192.%';
     FLUSH PRIVILEGES;
     EXIT;
+
+
+for cloudflared: 
+
+cloudflared access tcp --hostname marjon-db.air-system.app --url localhost:3307
