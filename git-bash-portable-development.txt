@@ -1,0 +1,19 @@
+# gitbash for portable thumdrive development
+# example: bash.bashrc
+
+
+for drive in {d..z}; do
+    if [ -d "/$drive/PortableGit" ]; then
+        export USB_DRIVE="/$drive"
+        break
+    fi
+done
+
+export GOPATH="$USB_DRIVE/env/go1.23.12.windows-amd64/user/go"
+export GOROOT="$USB_DRIVE/env/go1.23.12.windows-amd64/go"
+export PATH="$PATH:$USB_DRIVE/env/go1.23.12.windows-amd64/go/bin"
+export PATH="$PATH:$USB_DRIVE/env/php-8.2.30-Win32-vs16-x64"
+export PATH="$PATH:$USB_DRIVE/env/esbuild"
+export PATH="$PATH:$USB_DRIVE/env/sqlc_1.30.0_windows_amd64"
+export PATH="$PATH:$USB_DRIVE/env/zig"
+export PATH="$PATH:$USB_DRIVE/env/mariadb-10.11.14-winx64/mariadb-10.11.14-winx64/bin"
