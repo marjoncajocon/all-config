@@ -76,10 +76,15 @@ for drive in {d..z}; do
     fi
 done
 
-export GOROOT="$USB_DRIVE/env/go_lang/go1.23.6-win7/go"
-export GOPATH="$USB_DRIVE/env/go_lang/go1.23.6-win7/user/go"
-#export GOROOT="$USB_DRIVE/env/go_lang/go1.23.12.windows-amd64/go"
-#export GOPATH="$USB_DRIVE/env/go_lang/go1.23.12.windows-amd64/user/go"
+export GOTOOLCHAIN=local
+
+# ---- for production that want the latest features and latest performance and security ---- #
+#export GOROOT="$USB_DRIVE/env/go_lang/go1.26.0.windows-amd64/go"
+#export GOPATH="$USB_DRIVE/env/go_lang/go1.26.0.windows-amd64/user/go"
+
+# ---- my dev/production my current source code ---- #
+export GOROOT="$USB_DRIVE/env/go_lang/go1.23.12.windows-amd64/go"
+export GOPATH="$USB_DRIVE/env/go_lang/go1.23.12.windows-amd64/user/go"
 
 export PATH="$PATH:$GOROOT/bin"
 
