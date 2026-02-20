@@ -1,3 +1,5 @@
+export USB_DRIVE="/f"
+
 # To the extent possible under law, the author(s) have dedicated all 
 # copyright and related and neighboring rights to this software to the 
 # public domain worldwide. This software is distributed without any warranty. 
@@ -69,12 +71,14 @@ unset _ps1_symbol
 shopt -q login_shell || . /etc/profile.d/git-prompt.sh
 
 # Look for the thumb drive by checking for the Go installation folder
-for drive in {d..z}; do
-    if [ -d "/$drive/PortableGit" ]; then
-        export USB_DRIVE="/$drive"
-        break
-    fi
-done
+
+# i comment this because it is so log
+#for drive in {d..z}; do
+#    if [ -d "/$drive/PortableGit" ]; then
+#        export USB_DRIVE="/$drive"
+#        break
+#    fi
+#done
 
 export GOTOOLCHAIN=local
 
