@@ -1,0 +1,11 @@
+nextjs for static that support to serve in different server:
+
+@next.config.js
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export',
+  // Optional: Ensures /me becomes /me/index.html instead of /me.html
+  // trailingSlash: true, 
+};
+
+module.exports = nextConfig;
