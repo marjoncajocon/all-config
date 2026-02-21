@@ -5,7 +5,7 @@ nextjs for static that support to serve in different server:
 const nextConfig = {
   output: 'export',
   // Optional: Ensures /me becomes /me/index.html instead of /me.html
-  // trailingSlash: true, 
+  trailingSlash: true, 
 };
 
 module.exports = nextConfig;
