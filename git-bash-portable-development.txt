@@ -96,6 +96,7 @@ export PATH="$PATH:$USB_DRIVE/env/esbuild"
 export PATH="$PATH:$USB_DRIVE/env/sqlc_1.30.0_windows_amd64"
 export PATH="$PATH:$USB_DRIVE/env/zig"
 export PATH="$PATH:$USB_DRIVE/env/mariadb-10.11.14-winx64/mariadb-10.11.14-winx64/bin"
+export PATH="$PATH:$USB_DRIVE/env/node/node-v24.13.1-win-x64"
 export PATH="$PATH:$USB_DRIVE/env/python"
 export PATH="$PATH:$USB_DRIVE/env/python/Scripts"
 
@@ -108,9 +109,17 @@ export CC=gcc
 export CXX=g++
 
 #java
-export JAVA_HOME="$USB_DRIVE/env/java/java8_201_64"
-#export JAVA_HOME="$USB_DRIVE/env/java/java8_201_32"
+export JAVA_HOME="$USB_DRIVE/env/java/jdk-21.0.10"
 export PATH="$PATH:$JAVA_HOME/bin"
+
+#android_development
+export ANDROID_HOME="$USB_DRIVE/env/Android/Sdk"
+export PATH="$PATH:$ANDROID_HOME/cmdline-tools/latest/bin"
+export PATH="$PATH:$ANDROID_HOME/platform-tools"
+export PATH="$PATH:$ANDROID_HOME/emulator"
+
+#flutter 
+export PATH="$PATH:$USB_DRIVE/env/flutter/bin"
 
 #php 
 export PATH="$PATH:$USB_DRIVE/PortableGit/home/app/laragon/bin/php/php-8.1.10-Win32-vs16-x64"
