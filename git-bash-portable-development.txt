@@ -1,4 +1,4 @@
-export USB_DRIVE="/f"
+export USB_DRIVE="/d"
 
 # To the extent possible under law, the author(s) have dedicated all 
 # copyright and related and neighboring rights to this software to the 
@@ -96,7 +96,7 @@ export PATH="$PATH:$USB_DRIVE/env/esbuild"
 export PATH="$PATH:$USB_DRIVE/env/sqlc_1.30.0_windows_amd64"
 export PATH="$PATH:$USB_DRIVE/env/zig"
 export PATH="$PATH:$USB_DRIVE/env/mariadb-10.11.14-winx64/mariadb-10.11.14-winx64/bin"
-export PATH="$PATH:$USB_DRIVE/env/node/node-v24.13.1-win-x64"
+export PATH="$PATH:$USB_DRIVE/env/node/node-v22.22.0-win-x64"
 export PATH="$PATH:$USB_DRIVE/env/python"
 export PATH="$PATH:$USB_DRIVE/env/python/Scripts"
 
@@ -118,11 +118,21 @@ export PATH="$PATH:$ANDROID_HOME/cmdline-tools/latest/bin"
 export PATH="$PATH:$ANDROID_HOME/platform-tools"
 export PATH="$PATH:$ANDROID_HOME/emulator"
 
+#gradle
+export PATH="$PATH:$USB_DRIVE/env/gradle/gradle-8.14.2/bin"
+
 #flutter 
-export PATH="$PATH:$USB_DRIVE/env/flutter/bin"
+#export PATH="$PATH:$USB_DRIVE/env/flutter/bin"
 
 #php 
 export PATH="$PATH:$USB_DRIVE/PortableGit/home/app/laragon/bin/php/php-8.1.10-Win32-vs16-x64"
 
 # application 
 export PATH="$PATH:$USB_DRIVE/PortableGit/home/app/VSCode-win32-x64-1.104.0/"
+
+# npm overide environment
+export npm_config_cache="$USB_DRIVE/env/node/npm-home/npm-cache"
+export npm_config_init_module="$USB_DRIVE/env/node/npm-home"
+export npm_config_local_prefix="$USB_DRIVE/env/node/npm-home"
+export npm_config_userconfig="$USB_DRIVE/env/node/npm-home"
+export npm_package_json="$USB_DRIVE/env/node/npm-home"
