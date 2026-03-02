@@ -1,5 +1,5 @@
 
-# sample tsx for network search react-select
+//sample tsx for network search react-select
 
 import AsyncSelect from "react-select/async";
 
