@@ -1,0 +1,4 @@
+# offline build, --force; is use to force install even conflict dependency,, --offline it prepare if offfline pacakge is availble.
+npm install --force --offline
+#can do also
+npm install package_name --force
