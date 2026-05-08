@@ -96,17 +96,21 @@ export PATH="$PATH:$USB_DRIVE/env/esbuild"
 export PATH="$PATH:$USB_DRIVE/env/sqlc_1.30.0_windows_amd64"
 export PATH="$PATH:$USB_DRIVE/env/zig"
 export PATH="$PATH:$USB_DRIVE/env/mariadb-10.11.14-winx64/mariadb-10.11.14-winx64/bin"
-export PATH="$PATH:$USB_DRIVE/env/node/node-v22.22.0-win-x64"
+export PATH="$PATH:$USB_DRIVE/env/node/node-v22.22.2-win-x64"
 export PATH="$PATH:$USB_DRIVE/env/python"
 export PATH="$PATH:$USB_DRIVE/env/python/Scripts"
 
 #export CC="zig cc -target x86_64-windows.7-gnu"
 #export CXX="zig c++ -target x86_64-windows.7-gnu"
 
-export MINGW_HOME="$USB_DRIVE/env/MinGW"
-export PATH="$PATH:$MINGW_HOME/bin"
-export CC=gcc
-export CXX=g++
+#export MINGW_HOME="$USB_DRIVE/env/MinGW"
+#export PATH="$PATH:$MINGW_HOME/bin"
+
+alias gcc="zig cc"
+alias g++="zig c++"
+
+export CC="zig cc"
+export CXX="zig c++"
 
 #java
 export JAVA_HOME="$USB_DRIVE/env/java/jdk-21.0.10"
