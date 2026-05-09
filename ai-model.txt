@@ -1,0 +1,2 @@
+# small but fast for local machine
+ollama run qwen2.5-coder:1.5b
