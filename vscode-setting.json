@@ -1,32 +1,18 @@
 {
+    "editor.fontLigatures": false,
     "editor.fontSize": 12,
-    "editor.fontFamily": "ProggyDotted",
+    "editor.fontFamily": "Hack",
+    "editor.lineHeight": 1.1,
     "editor.cursorStyle": "block",
-    "editor.lineHeight": 1.2,
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.minimap.maxColumn": 60,
     "git.openRepositoryInParentFolders": "always",
-    "workbench.iconTheme": "Monokai Classic Icons",
-    "editor.codeActionsOnSave": {
-
-    },
-    "editor.dropIntoEditor.preferences": [
-
-
-    ],
-    "editor.indentSize": "tabSize",
-    "editor.language.brackets": [
-
-
-    ],
-    "editor.minimap.maxColumn": 40,
-    "editor.fontLigatures": true,
-    "editor.fontWeight": "normal",
-    "editor.fontVariations": false,
-    "workbench.colorTheme": "monokai-charcoal (yellow)",
-    "editor.cursorBlinking": "solid",
-    "editor.minimap.autohide": "scroll",
-    "workbench.colorCustomizations": {
-        "editorHoverWidget.background":"#00000048",
-        "editorHoverWidget.foreground":"#ffffffda",
-        "editorSuggestWidget.background":"#00000048"
+    "workbench.colorTheme": "Monokai++ Unified",
+    "workbench.productIconTheme": "material-product-icons",
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.enable": {
+      "*": false,
+      "typescript": true,
+      "typescriptreact": true
     }
 }
