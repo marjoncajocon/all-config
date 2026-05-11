@@ -14,7 +14,7 @@
       "*": false,
       "typescript": true,
       "typescriptreact": true,
-      "javascriptscript": true,
+      "javascript": true,
       "javascriptreact": true
     }
 }
