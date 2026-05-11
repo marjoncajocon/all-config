@@ -13,6 +13,8 @@
     "github.copilot.enable": {
       "*": false,
       "typescript": true,
-      "typescriptreact": true
+      "typescriptreact": true,
+      "javascriptscript": true,
+      "javascriptreact": true
     }
 }
