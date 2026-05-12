@@ -1,0 +1,7 @@
+
+-- make sure all column are the same
+SELECT * FROM (
+	SELECT "pr" AS t_src, requestor_fullname AS t_name, p_created_at AS t_date, p_amount AS t_amount FROM p_purchase_requests
+	UNION ALL
+	SELECT "po" AS t_src, p_po_no AS t_name, p_po_date AS t_date, p_total_amount AS t_amount FROM p_purchase_orders
+) AS t_transaction order by t_date asc;
