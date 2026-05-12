@@ -15,6 +15,15 @@
       "typescript": true,
       "typescriptreact": true,
       "javascript": true,
-      "javascriptreact": true
-    }
+      "javascriptreact": true,
+      "go": true
+    },
+
+    "html.autoClosingTags": false,
+    "js/ts.autoClosingTags.enabled": false,
+    
+
+    "editor.linkedEditing": false,
+    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingQuotes": "never"
 }
