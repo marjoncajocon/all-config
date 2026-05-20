@@ -1,0 +1,24 @@
+-- name: SearchUsers :many
+SELECT * FROM users WHERE username = sqlc.arg('search_term');
+
+-- name: UpdateBio :exec
+
+// narg force the generated id with pointer
+UPDATE users SET bio = sqlc.narg('new_bio') WHERE id = $1;
+
+-- name: GetUsersByIDs :many
+// slice use for group special in IN keyword in mysql
+SELECT * FROM users WHERE id IN (sqlc.slice('user_ids'));
+
+
+-- name: GetPostWithAuthor :one
+#re used the struct
+SELECT sqlc.embed(posts), sqlc.embed(users) 
+FROM posts JOIN users ON posts.author_id = users.id 
+WHERE posts.id = $1;
+example generated code for embed: 
+type GetPostWithAuthorRow struct {
+    Post Post // Nests the full generated model struct
+    User User // Nests the full generated model struct
+}
+
