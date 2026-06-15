@@ -91,6 +91,7 @@ export GOROOT="$USB_DRIVE/env/go_lang/go1.23.12.windows-amd64/go"
 export GOPATH="$USB_DRIVE/env/go_lang/go1.23.12.windows-amd64/user/go"
 
 export PATH="$PATH:$GOROOT/bin"
+export PATH="$PATH:$GOPATH/bin"
 
 export PATH="$PATH:$USB_DRIVE/env/esbuild"
 export PATH="$PATH:$USB_DRIVE/env/sqlc_1.31.1_windows_amd64"
