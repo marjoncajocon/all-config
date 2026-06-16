@@ -1,5 +1,7 @@
 export USB_DRIVE="/f"
 
+# export HOME="$USB_DRIVE/PortableGit/home"
+
 # To the extent possible under law, the author(s) have dedicated all 
 # copyright and related and neighboring rights to this software to the 
 # public domain worldwide. This software is distributed without any warranty. 
@@ -104,14 +106,19 @@ export PATH="$PATH:$USB_DRIVE/env/python/python-3.9.10.amd64/Scripts"
 #export CC="zig cc -target x86_64-windows.7-gnu"
 #export CXX="zig c++ -target x86_64-windows.7-gnu"
 
-#export MINGW_HOME="$USB_DRIVE/env/MinGW"
+# windows build gcc, note: uncomment this if activate the below zig c cross compile
+#export MINGW_HOME="$USB_DRIVE/env/mingw/MinGW"
 #export PATH="$PATH:$MINGW_HOME/bin"
+#export CC="gcc"
+#export CXX="g++"
+# end windows build for gg
 
+# zig c cross compile
 alias gcc="zig cc"
 alias g++="zig c++"
-
 export CC="zig cc"
 export CXX="zig c++"
+# end zig c cross compile
 
 #java
 export JAVA_HOME="$USB_DRIVE/env/java/jdk-21.0.10"
