@@ -32,7 +32,7 @@
     "supermaven.enable": {
         "go": false
     },
-    "workbench.colorTheme": "Monokai++",
+    "workbench.colorTheme": "Monokai++ Unified",
 
     "workbench.activityBar.location": "hidden", // hides the activity bar
     "workbench.editor.tabSizing":"shrink", // shrinks the editor tabs
@@ -45,4 +45,5 @@
     "editor.lineNumbers": "off",
     "editor.scrollbar.verticalScrollbarSize": 3,
     "editor.scrollbar.horizontalScrollbarSize": 3,
+    "editor.minimap.autohide": "scroll"
 }
