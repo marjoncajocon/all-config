@@ -2,8 +2,8 @@
     "editor.fontLigatures": true,
     "editor.fontFamily": "Cascadia Mono NF",
     "editor.lineHeight": 1,
-    "editor.cursorStyle": "block",
-    "editor.cursorBlinking": "blink",
+    "editor.cursorStyle": "line",
+    "editor.cursorBlinking": "solid",
     "workbench.iconTheme": "material-icon-theme",
     "editor.minimap.maxColumn": 40,
     "git.openRepositoryInParentFolders": "always",
@@ -30,7 +30,8 @@
     "workbench.editor.empty.hint": "hidden",
     "editor.fontSize": 13,
     "supermaven.enable": {
-        "go": false
+        "go": false,
+        "sql": false
     },
     "workbench.colorTheme": "Monokai++ Unified",
 
