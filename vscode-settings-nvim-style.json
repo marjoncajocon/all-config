@@ -46,5 +46,7 @@
     "editor.lineNumbers": "off",
     "editor.scrollbar.verticalScrollbarSize": 3,
     "editor.scrollbar.horizontalScrollbarSize": 3,
-    "editor.minimap.autohide": "scroll"
+    "editor.minimap.autohide": "scroll",
+    "window.commandCenter": false,
+    "workbench.layoutControl.enabled": false
 }
