@@ -48,5 +48,6 @@
     "editor.scrollbar.horizontalScrollbarSize": 3,
     "editor.minimap.autohide": "scroll",
     "window.commandCenter": false,
-    "workbench.layoutControl.enabled": false
+    "workbench.layoutControl.enabled": false,
+    "editor.renderWhitespace": "all"
 }
