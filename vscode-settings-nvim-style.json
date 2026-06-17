@@ -35,12 +35,14 @@
     "workbench.colorTheme": "Monokai++",
 
     "workbench.activityBar.location": "hidden", // hides the activity bar
-    "workbench.editor.tabSizing":"fit", // shrinks the editor tabs
+    "workbench.editor.tabSizing":"shrink", // shrinks the editor tabs
     "editor.glyphMargin": false,
     "editor.folding": false,
     
     "editor.tabSize": 4,
     "workbench.editor.enablePreview": false,
     "js/ts.experimental.useTsgo": true,
-    "editor.lineNumbers": "off"
+    "editor.lineNumbers": "off",
+    "editor.scrollbar.verticalScrollbarSize": 3,
+    "editor.scrollbar.horizontalScrollbarSize": 3,
 }
