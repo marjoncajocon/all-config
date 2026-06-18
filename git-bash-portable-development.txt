@@ -124,6 +124,9 @@ export CXX="zig c++"
 export JAVA_HOME="$USB_DRIVE/env/java/jdk-21.0.10"
 export PATH="$PATH:$JAVA_HOME/bin"
 
+#tiny c
+export PATH="$PATH:$USB_DRIVE/env/tcc"
+
 #android_development
 export ANDROID_HOME="$USB_DRIVE/env/Android/Sdk"
 export PATH="$PATH:$ANDROID_HOME/cmdline-tools/latest/bin"
