@@ -4,7 +4,7 @@
     "editor.lineHeight": 1,
     "editor.cursorStyle": "line",
     "editor.cursorBlinking": "solid",
-    "workbench.iconTheme": "material-icon-theme",
+    "workbench.iconTheme": null,
     "editor.minimap.maxColumn": 40,
     "git.openRepositoryInParentFolders": "always",
     "workbench.productIconTheme": "material-product-icons",
