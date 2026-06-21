@@ -33,7 +33,7 @@
         "go": false,
         "sql": false
     },
-    "workbench.colorTheme": "Monokai++ Unified",
+    "workbench.colorTheme": "Dark+",
 
     "workbench.activityBar.location": "hidden", // hides the activity bar
     "workbench.editor.tabSizing":"shrink", // shrinks the editor tabs
@@ -50,5 +50,6 @@
     "workbench.layoutControl.enabled": false,
     "editor.renderWhitespace": "all",
     "workbench.editor.enablePreview": false,
-    "editor.wordWrap": "on"
+    "editor.wordWrap": "off",
+    "workbench.tree.indent": 7,
 }
