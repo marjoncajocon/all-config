@@ -53,5 +53,7 @@
     "editor.wordWrap": "off",
     "workbench.tree.indent": 7,
     "window.density.editorTabHeight": "compact",
-    "window.zoomLevel": -1
+    "window.zoomLevel": -1,
+    "explorer.compactFolders": true
+    
 }
