@@ -28,12 +28,12 @@
     "editor.autoClosingBrackets": "never",
     "editor.autoClosingQuotes": "never",
     "workbench.editor.empty.hint": "hidden",
-    "editor.fontSize": 13,
+    "editor.fontSize": 14,
     "supermaven.enable": {
         "go": false,
         "sql": false
     },
-    "workbench.colorTheme": "Dark+",
+    "workbench.colorTheme": "Monokai++ Unified",
 
     "workbench.activityBar.location": "hidden", // hides the activity bar
     "workbench.editor.tabSizing":"shrink", // shrinks the editor tabs
@@ -52,4 +52,6 @@
     "workbench.editor.enablePreview": false,
     "editor.wordWrap": "off",
     "workbench.tree.indent": 7,
+    "window.density.editorTabHeight": "compact",
+    "window.zoomLevel": -1
 }
