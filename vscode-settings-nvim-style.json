@@ -28,7 +28,6 @@
     "editor.autoClosingBrackets": "never",
     "editor.autoClosingQuotes": "never",
     "workbench.editor.empty.hint": "hidden",
-    "editor.fontSize": 14,
     "supermaven.enable": {
         "go": false,
         "sql": false
@@ -53,7 +52,11 @@
     "editor.wordWrap": "off",
     "workbench.tree.indent": 7,
     "window.density.editorTabHeight": "compact",
-    "window.zoomLevel": -1,
-    "explorer.compactFolders": true
+    "window.zoomLevel": 0,
+    "explorer.compactFolders": true,
+    "editor.fontSize": 13,
+    "editor.rulers": [
+        { "column": 100}
+    ]
     
 }
