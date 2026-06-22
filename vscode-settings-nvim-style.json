@@ -7,7 +7,6 @@
     "workbench.iconTheme": null,
     "editor.minimap.maxColumn": 40,
     "git.openRepositoryInParentFolders": "always",
-    "workbench.productIconTheme": "material-product-icons",
     // "editor.inlineSuggest.enabled": true,
     // "github.copilot.enable": {
     //   "*": false,
@@ -19,11 +18,9 @@
     /* 1. Disable language-specific tag closing */
     "html.autoClosingTags": false,
     "js/ts.autoClosingTags.enabled": false,
-    
     /* 2. Disable Linked Editing (Highly recommended for Copilot users) */
     /* This prevents VS Code from automatically creating/editing a closing tag while you type the opening one */
     "editor.linkedEditing": false,
-
     /* 3. Optional: Disable bracket auto-closing if it still interferes */
     "editor.autoClosingBrackets": "never",
     "editor.autoClosingQuotes": "never",
@@ -32,19 +29,17 @@
         "go": false,
         "sql": false
     },
-    "workbench.colorTheme": "Monokai++ Unified",
-
     "workbench.activityBar.location": "hidden", // hides the activity bar
-    "workbench.editor.tabSizing":"shrink", // shrinks the editor tabs
+    "workbench.editor.tabSizing": "shrink", // shrinks the editor tabs
     "editor.glyphMargin": false,
     "editor.folding": false,
-    
     "editor.tabSize": 4,
+    "editor.insertSpaces": false,
     "js/ts.experimental.useTsgo": true,
     "editor.lineNumbers": "off",
     "editor.scrollbar.verticalScrollbarSize": 3,
     "editor.scrollbar.horizontalScrollbarSize": 3,
-    "editor.minimap.autohide": "none",
+    "editor.minimap.autohide": "mouseover",
     "window.commandCenter": false,
     "workbench.layoutControl.enabled": false,
     "editor.renderWhitespace": "all",
@@ -56,7 +51,11 @@
     "explorer.compactFolders": true,
     "editor.fontSize": 13,
     "editor.rulers": [
-        { "column": 100}
-    ]
-    
+        {
+            "column": 100
+        }
+    ],
+    "workbench.colorTheme": "Monokai Pirokai - Arctic Frost",
+    "files.autoSave": "afterDelay",
+    "editor.formatOnSave": false
 }
