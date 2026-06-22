@@ -99,7 +99,7 @@ export PATH="$PATH:$USB_DRIVE/env/esbuild"
 export PATH="$PATH:$USB_DRIVE/env/sqlc_1.31.1_windows_amd64"
 export PATH="$PATH:$USB_DRIVE/env/zig"
 export PATH="$PATH:$USB_DRIVE/env/mariadb-10.11.14-winx64/mariadb-10.11.14-winx64/bin"
-#export PATH="$PATH:$USB_DRIVE/env/node/node-v22.22.2-win-x64"
+export PATH="$PATH:$USB_DRIVE/env/node/node-v22.22.2-win-x64"
 export PATH="$PATH:$USB_DRIVE/env/python/python-3.9.10.amd64"
 export PATH="$PATH:$USB_DRIVE/env/python/python-3.9.10.amd64/Scripts"
 
@@ -147,11 +147,11 @@ export PATH="$PATH:$USB_DRIVE/PortableGit/home/app/VSCode-win32-x64-1.119.0/"
 export PATH="$PATH:$USB_DRIVE/PortableGit/home/app/Zed_123/"
 
 # npm overide environment
-#export npm_config_cache="$USB_DRIVE/env/node/npm-home/npm-cache"
-#export npm_config_init_module="$USB_DRIVE/env/node/npm-home"
-#export npm_config_local_prefix="$USB_DRIVE/env/node/npm-home"
-#export npm_config_userconfig="$USB_DRIVE/env/node/npm-home"
-#export npm_package_json="$USB_DRIVE/env/node/npm-home"
+export npm_config_cache="$USB_DRIVE/env/node/npm-home/npm-cache"
+export npm_config_init_module="$USB_DRIVE/env/node/npm-home"
+export npm_config_local_prefix="$USB_DRIVE/env/node/npm-home"
+export npm_config_userconfig="$USB_DRIVE/env/node/npm-home"
+export npm_package_json="$USB_DRIVE/env/node/npm-home"
 
 # neovim|nvim
 export PATH="$PATH:$USB_DRIVE/env/nvim-win64/bin"
@@ -161,6 +161,7 @@ export XDG_STATE_HOME="$USB_DRIVE/env/nvim-win64/nvim-data/state"
 export XDG_CACHE_HOME="$USB_DRIVE/env/nvim-win64/nvim-data/cache"
 
 #bun environment
+export BUN_CONFIG_CONDITIONS="node"
 export BUN_FEATURE_FLAG_DISABLE_NATIVE_DEPENDENCY_LINKER=1
 export BUN_INSTALL_CACHE_DIR="$USB_DRIVE/env/bun/bun-cache"
 export PATH="$PATH:$USB_DRIVE/env/bun/bun-windows-x64"
