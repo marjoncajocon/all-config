@@ -161,5 +161,6 @@ export XDG_STATE_HOME="$USB_DRIVE/env/nvim-win64/nvim-data/state"
 export XDG_CACHE_HOME="$USB_DRIVE/env/nvim-win64/nvim-data/cache"
 
 #bun environment
+export BUN_FEATURE_FLAG_DISABLE_NATIVE_DEPENDENCY_LINKER=1
 export BUN_INSTALL_CACHE_DIR="$USB_DRIVE/env/bun/bun-cache"
 export PATH="$PATH:$USB_DRIVE/env/bun/bun-windows-x64"
