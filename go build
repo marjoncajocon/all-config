@@ -32,6 +32,10 @@ export GOARCH="amd64"
 export CC="zig cc -target x86_64-linux-musl"
 export CXX="zig c++ -target x86_64-linux-musl" 
 
+// online build: 
+// from windows cross compilation
+export CGO_ENABLED=1; export GOOS="linux"; export GOARCH="amd64"; export CC="zig cc -target x86_64-linux-musl"; export CXX="zig c++ -target x86_64-linux-musl"
+
 /// from ubuntu to windows build
 // work for no quote
 SET CC=zig cc -target x86_64-windows-gnu
