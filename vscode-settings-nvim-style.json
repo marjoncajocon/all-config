@@ -1,9 +1,9 @@
 {
     "editor.fontLigatures": true,
-    "editor.fontFamily": "Cascadia Mono NF",
+    "editor.fontFamily": "Monaco Nerd Font",
     "editor.lineHeight": 1,
-    "editor.cursorStyle": "line",
-    "editor.cursorBlinking": "solid",
+    "editor.cursorStyle": "block",
+    "editor.cursorBlinking": "blink",
     "workbench.iconTheme": null,
     "editor.minimap.maxColumn": 40,
     "git.openRepositoryInParentFolders": "always",
@@ -33,13 +33,13 @@
     "workbench.editor.tabSizing": "shrink", // shrinks the editor tabs
     "editor.glyphMargin": false,
     "editor.folding": false,
-    "editor.tabSize": 4,
-    "editor.insertSpaces": false,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
     "js/ts.experimental.useTsgo": true,
     "editor.lineNumbers": "off",
     "editor.scrollbar.verticalScrollbarSize": 3,
     "editor.scrollbar.horizontalScrollbarSize": 3,
-    "editor.minimap.autohide": "mouseover",
+    "editor.minimap.autohide": "none",
     "window.commandCenter": false,
     "workbench.layoutControl.enabled": false,
     "editor.renderWhitespace": "all",
@@ -49,13 +49,14 @@
     "window.density.editorTabHeight": "compact",
     "window.zoomLevel": 0,
     "explorer.compactFolders": true,
-    "editor.fontSize": 13,
+    "editor.fontSize": 12.5,
     "editor.rulers": [
         {
             "column": 100
         }
     ],
-    "workbench.colorTheme": "Monokai Pirokai - Arctic Frost",
+    "workbench.colorTheme": "Monokai++",
     "files.autoSave": "afterDelay",
-    "editor.formatOnSave": false
+    "editor.formatOnSave": false,
+    "redhat.telemetry.enabled": true
 }
