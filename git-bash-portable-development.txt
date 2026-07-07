@@ -141,7 +141,7 @@ export PATH="$PATH:$USB_DRIVE/env/gradle/gradle-8.14.2/bin"
 export PATH="$PATH:$USB_DRIVE/env/flutter/bin"
 
 #flutter cache
-export PUB_CACHE="$PATH:$USB_DRIVE/env/flutter_cache"
+export PUB_CACHE="$USB_DRIVE/env/flutter_cache"
 export PATH="$PATH:$PUB_CACHE/bin"
 
 #php 
