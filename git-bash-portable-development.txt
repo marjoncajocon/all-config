@@ -127,6 +127,10 @@ export PATH="$PATH:$JAVA_HOME/bin"
 #tiny c
 export PATH="$PATH:$USB_DRIVE/env/tcc"
 
+# for webassembly
+export EMSDK_PATH="$USB_DRIVE/env/emsdk"
+export PATH="$PATH:$EMSDK_PATH"
+
 #android_development
 export ANDROID_HOME="$USB_DRIVE/env/Android/Sdk"
 export PATH="$PATH:$ANDROID_HOME/cmdline-tools/latest/bin"
@@ -150,7 +154,7 @@ export PATH="$PATH:$PUB_CACHE/bin"
 # application 
 export PATH="$PATH:$USB_DRIVE/PortableGit/home/app/VSCode-win32-x64-1.119.0/"
 # claude code in terminal mode in vscode
-export PATH="$PATH:$USB_DRIVE/PortableGit/home/app/VSCode-win32-x64-1.119.0/data/extensions/anthropic.claude-code-2.1.201-win32-x64/resources/native-binary"
+export PATH="$PATH:$USB_DRIVE/PortableGit/home/app/VSCode-win32-x64-1.119.0/data/extensions/anthropic.claude-code-2.1.215-win32-x64/resources/native-binary"
 alias claude-auto="claude --enable-auto-mode"
 
 export PATH="$PATH:$USB_DRIVE/PortableGit/home/app/Zed_123/"
