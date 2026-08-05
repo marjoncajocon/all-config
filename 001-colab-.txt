@@ -1,2 +1,4 @@
+!cp /kaggle/input/filipino-train-1/selfplay_filipino_linux_x64 /kaggle/working/selfplay_filipino_linux_x64
+
 !chmod +x /kaggle/input/your-dataset-name/binary_file_name
 !/kaggle/input/your-dataset-name/binary_file_name
