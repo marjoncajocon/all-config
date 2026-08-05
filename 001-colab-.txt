@@ -1,0 +1,2 @@
+!chmod +x /kaggle/input/your-dataset-name/binary_file_name
+!/kaggle/input/your-dataset-name/binary_file_name
