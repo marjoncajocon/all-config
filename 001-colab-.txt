@@ -12,3 +12,8 @@
 # if you want to run from the google drive: 
 !chmod +x /content/drive/MyDrive/01_train/selfplay_filipino_linux_x64
 !/content/drive/MyDrive/01_train/selfplay_filipino_linux_x64
+
+
+
+!chmod +x /content/drive/MyDrive/01_train/selfplay_filipino_linux_x64
+!/content/drive/MyDrive/01_train/selfplay_filipino_linux_x64 --depth 10 --budget-ms 300000
