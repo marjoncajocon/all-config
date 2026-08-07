@@ -21,7 +21,7 @@
 
 # create a neuralnetwork using gpu google colab
 !python3 /content/drive/MyDrive/02_train/train_gpu.py \
-    --data "/content/drive/MyDrive/02_train/data/filipino/*.txt" \
-    --variant filipino --h 256 --epochs 40 \
-    --keep-corpus /content/drive/MyDrive/02_train/filipino.ntc \
-    --out /content/nn_h256.ntw --log /content/train.log
+    --corpus /content/drive/MyDrive/02_train/filipino.ntc \
+    --h 256 --epochs 40 \
+    --out /content/nn_h256.ntw --outh /content/nnue_weights.h \
+    --log /content/train.log
