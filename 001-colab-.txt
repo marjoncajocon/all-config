@@ -17,3 +17,8 @@
 
 !chmod +x /content/drive/MyDrive/01_train/selfplay_filipino_linux_x64
 !/content/drive/MyDrive/01_train/selfplay_filipino_linux_x64 --depth 10 --budget-ms 300000
+
+
+# create a neuralnetwork using gpu google colab
+!chmod +x /content/drive/MyDrive/02_train/trainer_linux_x64
+!/content/drive/MyDrive/02_train/trainer_linux_x64 --variant=filipino --corpus=corpus.ntc --gpu=1 --algo=minibatch --opt=adam --batch=8192 --h=256 --epochs=40 --out=nn_h256.ntw --outh=nnue_weights.h --log=train.log
