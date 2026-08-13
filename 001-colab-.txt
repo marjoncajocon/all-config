@@ -25,3 +25,7 @@
     --h 256 --epochs 40 \
     --out /content/nn_h256.ntw --outh /content/nnue_weights.h \
     --log /content/train.log
+
+# counting 
+!chmod +x /content/drive/MyDrive/02_train/count_linux_x64
+!/content/drive/MyDrive/02_train/count_linux_x64 --variant=filipino --data "/content/drive/MyDrive/02_train/data/filipino/*.txt"
