@@ -1,6 +1,9 @@
 # remove the last commit 
 git reset --hard HEAD~1
 
+# back to the stage (recommended and safe to avoid removing all the files directly)
+git reset --soft HEAD~1
+
 # to remove the untrack files/folders
 git clean -fd
 
