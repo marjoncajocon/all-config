@@ -19,4 +19,4 @@ git stash list
 git checkout <hash number> : ex: git checkout a1b2c3d
 
 # go back the the present commit or the latest commit
-git checkout main
+git checkout <branch_name>
