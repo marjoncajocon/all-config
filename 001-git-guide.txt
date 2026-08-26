@@ -3,3 +3,20 @@ git reset --hard HEAD~1
 
 # to remove the untrack files/folders
 git clean -fd
+
+##########################################
+git stash -u
+
+# bring back the stash
+git stash pop
+
+# stash list
+git stash list
+
+
+
+# go to the specific commit thn you can test
+git checkout <hash number> : ex: git checkout a1b2c3d
+
+# go back the the present commit or the latest commit
+git checkout main
