@@ -1,0 +1,30 @@
+
+## 1. Curriculum Data Allocation Blueprint
+
+| Training Phase | Target Game Count | Unique Positions | Core Learning Target |
+|---|---|---|---|
+| 4 Depth | 20K – 50K | 1M – 2M | Legal moves, basic captures, material safety. |
+| 6 Depth | 100K – 200K | 4M – 8M | Double-jumps, basic forks, wall structures. |
+| 8 Depth | 200K – 400K | 8M – 16M | Midgame trades, center control, opening lines. |
+| 10 Depth | 500K+ | 25M+ | Endgame conversion, advanced sacrifices. |
+
+------------------------------
+## 2. Why Depth-4 Dataset Size is Capped
+
+* 
+* Rapid Policy Saturation: The shallow action space is small.
+* Diminishing Generative Returns: Excess games replicate identical short-term blunders.
+* Shallow Horizon Blindness: The engine cannot see deeper tactical combinations.
+* Preventing Policy Regression: Over-training at depth 4 solidifies bad habits. [2, 3] 
+* 
+
+------------------------------
+## 3. Execution Rules for the Depth-4 Phase
+
+* 
+* Filter Exact Transpositions: Deduplicate identical board states during generation.
+* Maintain High Exploration: Use a 20% random exploration factor (epsilon-greedy).
+* Inject Root Noise: Add [Dirichlet Noise](https://arxiv.org/html/2408.01072v1) to vary opening sequences.
+* Optimize Data Formats: Store unique positions as dense 64-bit integers. [4, 5] 
+* 
+
