@@ -138,8 +138,11 @@ export PATH="$PATH:$ANDROID_HOME/platform-tools"
 export PATH="$PATH:$ANDROID_HOME/emulator"
 export ANDROID_AVD_HOME="$PATH:$ANDROID_HOME/.android/avd"
 
+
 #gradle
 export PATH="$PATH:$USB_DRIVE/env/gradle/gradle-8.14.2/bin"
+
+export GRADLE_USER_HOME="$USB_DRIVE/env/gradle-home-2"
 
 #flutter 
 export PATH="$PATH:$USB_DRIVE/env/flutter/bin"
@@ -154,7 +157,7 @@ export PATH="$PATH:$PUB_CACHE/bin"
 # application 
 export PATH="$PATH:$USB_DRIVE/PortableGit/home/app/VSCode-win32-x64-1.119.0/"
 # claude code in terminal mode in vscode
-export PATH="$PATH:$USB_DRIVE/PortableGit/home/app/VSCode-win32-x64-1.119.0/data/extensions/anthropic.claude-code-2.1.215-win32-x64/resources/native-binary"
+export PATH="$PATH:$USB_DRIVE/PortableGit/home/app/VSCode-win32-x64-1.119.0/data/extensions/anthropic.claude-code-2.1.252-win32-x64/resources/native-binary"
 alias claude-auto="claude --enable-auto-mode"
 
 export PATH="$PATH:$USB_DRIVE/PortableGit/home/app/Zed_123/"
