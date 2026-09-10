@@ -234,3 +234,9 @@ free -h
 
 # show the size of the folder
 du -h
+
+#view time
+timedatectl
+
+#edit timezone
+sudo timedatectl set-timezone Asia/Manila
