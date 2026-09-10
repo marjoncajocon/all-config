@@ -240,3 +240,8 @@ timedatectl
 
 #edit timezone
 sudo timedatectl set-timezone Asia/Manila
+
+# view storage 
+df -h /
+# view all the total size of the drive, all partition
+lsblk
