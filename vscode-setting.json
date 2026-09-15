@@ -1,29 +1,85 @@
 {
-    "editor.fontLigatures": false,
-    "editor.fontSize": 12,
-    "editor.fontFamily": "Hack",
-    "editor.lineHeight": 1.1,
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "Hack Nerd Font",
+    "editor.lineHeight": 1,
     "editor.cursorStyle": "block",
-    "workbench.iconTheme": "material-icon-theme",
-    "editor.minimap.maxColumn": 60,
+    "editor.cursorBlinking": "solid",
+    "editor.minimap.maxColumn": 40,
     "git.openRepositoryInParentFolders": "always",
-    "workbench.colorTheme": "Monokai++ Unified",
-    "workbench.productIconTheme": "material-product-icons",
     "editor.inlineSuggest.enabled": true,
     "github.copilot.enable": {
-      "*": false,
-      "typescript": true,
-      "typescriptreact": true,
-      "javascript": true,
-      "javascriptreact": true,
-      "go": true
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "typescript": true,
+        "typescriptreact": true,
+        "javascript": true,
+        "javascriptreact": true,
+        "go": true,
+        "sql": true
     },
-
+    /* 1. Disable language-specific tag closing */
     "html.autoClosingTags": false,
     "js/ts.autoClosingTags.enabled": false,
-    
-
+    /* 2. Disable Linked Editing (Highly recommended for Copilot users) */
+    /* This prevents VS Code from automatically creating/editing a closing tag while you type the opening one */
     "editor.linkedEditing": false,
+    /* 3. Optional: Disable bracket auto-closing if it still interferes */
     "editor.autoClosingBrackets": "never",
-    "editor.autoClosingQuotes": "never"
+    "editor.autoClosingQuotes": "never",
+    "workbench.editor.empty.hint": "hidden",
+    "workbench.activityBar.location": "default", // hides the activity bar
+    "workbench.editor.tabSizing": "shrink", // shrinks the editor tabs
+    "editor.glyphMargin": true,
+    "editor.folding": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "js/ts.experimental.useTsgo": true,
+    "editor.lineNumbers": "on",
+    // "editor.scrollbar.verticalScrollbarSize": 3,
+    // "editor.scrollbar.horizontalScrollbarSize": 3,
+    "editor.minimap.autohide": "none",
+    "window.commandCenter": false,
+    "workbench.layoutControl.enabled": false,
+    "editor.renderWhitespace": "all",
+    "workbench.editor.enablePreview": false,
+    "editor.wordWrap": "off",
+    "workbench.tree.indent": 7,
+    "window.density.editorTabHeight": "compact",
+    "window.zoomLevel": 0,
+    "explorer.compactFolders": true,
+    "editor.rulers": [
+        {
+            "column": 100
+        }
+    ],
+    "workbench.colorTheme": "Monokai++",
+    "files.autoSave": "afterDelay",
+    "editor.formatOnSave": false,
+    "redhat.telemetry.enabled": true,
+    "supermaven.enable": {
+        "sql": false,
+        "go": false
+    },
+    "editor.fontSize": 12,
+    "[dart]": {
+        "editor.formatOnSave": false,
+        "editor.formatOnType": false,
+        "editor.formatOnPaste": false,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": "off"
+    },
+    "claudeCode.preferredLocation": "panel",
+    "git.autofetch": true,
+    "git.enableSmartCommit": true,
+    "diffEditor.hideUnchangedRegions.enabled": false,    
+    "files.associations": {
+        "*.inc": "c"
+    },
+    "workbench.activityBar.compact": true
 }
