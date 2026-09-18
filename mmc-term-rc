@@ -1,0 +1,123 @@
+# /etc/profile - settings for everyone who uses this MMC folder.
+# Read once when mmc starts. Syntax is a small bash-like subset:
+#   export NAME=value    alias name='value'    source file    # comment
+#
+# Paths are Linux style (on Windows too):
+#   /             the MMC folder (where the mmc program is)
+#   /d/env/zig    D:\env\zig - drive letters work like in git-bash
+#   ~             your home: /home/<user>
+#   $MMC_DRIVE    the drive MMC is on, e.g. /d
+#
+# Translated from the git-bash /etc/bash.bashrc of D:\PortableGit.
+# Aliases are in ~/.mmcrc.
+
+# hardcoded drive, same as the git-bash bashrc
+# (to follow the drive mmc is on automatically, use: export USB_DRIVE="$MMC_DRIVE")
+export USB_DRIVE="/d"
+
+export GOTOOLCHAIN=local
+
+# ---- for production that want the latest features and latest performance and security ---- #
+#export GOROOT="$USB_DRIVE/env/go_lang/go1.26.0.windows-amd64/go"
+#export GOPATH="$USB_DRIVE/env/go_lang/go1.26.0.windows-amd64/user/go"
+
+# ---- my dev/production my current source code ---- #
+export GOROOT="$USB_DRIVE/env/go_lang/go1.23.12.windows-amd64/go"
+export GOPATH="$USB_DRIVE/env/go_lang/go1.23.12.windows-amd64/user/go"
+
+export PATH="$PATH:$GOROOT/bin"
+export PATH="$PATH:$GOPATH/bin"
+
+export PATH="$PATH:$USB_DRIVE/env/esbuild"
+export PATH="$PATH:$USB_DRIVE/env/sqlc_1.31.1_windows_amd64"
+export PATH="$PATH:$USB_DRIVE/env/zig"
+export PATH="$PATH:$USB_DRIVE/env/mariadb-10.11.14-winx64/mariadb-10.11.14-winx64/bin"
+export PATH="$PATH:$USB_DRIVE/env/node/node-v22.22.2-win-x64"
+export PATH="$PATH:$USB_DRIVE/env/python/python-3.9.10.amd64"
+export PATH="$PATH:$USB_DRIVE/env/python/python-3.9.10.amd64/Scripts"
+
+#export CC="zig cc -target x86_64-windows.7-gnu"
+#export CXX="zig c++ -target x86_64-windows.7-gnu"
+
+# windows build gcc, note: uncomment this if activate the below zig c cross compile
+#export MINGW_HOME="$USB_DRIVE/env/mingw/MinGW"
+#export PATH="$PATH:$MINGW_HOME/bin"
+#export CC="gcc"
+#export CXX="g++"
+# end windows build for gg
+
+# zig c cross compile (the gcc / g++ aliases are in ~/.mmcrc)
+export CC="zig cc"
+export CXX="zig c++"
+# end zig c cross compile
+
+#java
+export JAVA_HOME="$USB_DRIVE/env/java/jdk-21.0.11"
+export PATH="$PATH:$JAVA_HOME/bin"
+
+#tiny c
+export PATH="$PATH:$USB_DRIVE/env/tcc"
+
+# for webassembly
+export EMSDK_PATH="$USB_DRIVE/env/emsdk"
+export PATH="$PATH:$EMSDK_PATH"
+
+#android_development
+export ANDROID_HOME="$USB_DRIVE/env/Android/Sdk"
+export PATH="$PATH:$ANDROID_HOME/cmdline-tools/latest/bin"
+export PATH="$PATH:$ANDROID_HOME/platform-tools"
+export PATH="$PATH:$ANDROID_HOME/emulator"
+# the bashrc had "$PATH:$ANDROID_HOME/.android/avd" here (the whole PATH
+# glued in front, and that folder does not exist). The AVDs (chess_test)
+# are in env/Android/avd:
+export ANDROID_AVD_HOME="$USB_DRIVE/env/Android/avd"
+
+#gradle
+export PATH="$PATH:$USB_DRIVE/env/gradle/gradle-8.14.2/bin"
+
+export GRADLE_USER_HOME="$USB_DRIVE/env/gradle-home-3"
+
+#flutter
+export PATH="$PATH:$USB_DRIVE/env/flutter/bin"
+
+#flutter cache
+export PUB_CACHE="$USB_DRIVE/env/flutter_cache"
+export PATH="$PATH:$PUB_CACHE/bin"
+
+#php
+#export PATH="$PATH:$USB_DRIVE/mmc-shell/home/marjoncajocon/app/laragon/bin/php/php-8.1.10-Win32-vs16-x64"
+
+# application
+# bin/ has code.cmd, the real command line launcher ("code ." returns at
+# once). It goes in FRONT of PATH: the VSCode folder itself (Code.exe) is
+# already in the Windows PATH and would win otherwise.
+export PATH="$USB_DRIVE/mmc-shell/home/marjoncajocon/app/VSCode-win32-x64-1.119.0/bin:$PATH"
+export PATH="$PATH:$USB_DRIVE/mmc-shell/home/marjoncajocon/app/VSCode-win32-x64-1.119.0"
+# claude code in terminal mode in vscode
+export PATH="$PATH:$USB_DRIVE/mmc-shell/home/marjoncajocon/app/VSCode-win32-x64-1.119.0/data/extensions/anthropic.claude-code-2.1.273-win32-x64/resources/native-binary"
+
+export PATH="$PATH:$USB_DRIVE/mmc-shell/home/marjoncajocon/app/Zed_123"
+export PATH="$PATH:$USB_DRIVE/mmc-shell/home/marjoncajocon/app/sublime_merge_build_2125_x64"
+
+# npm overide environment
+export npm_config_cache="$USB_DRIVE/env/node/npm-home/npm-cache"
+export npm_config_init_module="$USB_DRIVE/env/node/npm-home"
+export npm_config_local_prefix="$USB_DRIVE/env/node/npm-home"
+export npm_config_userconfig="$USB_DRIVE/env/node/npm-home"
+export npm_package_json="$USB_DRIVE/env/node/npm-home"
+
+# neovim|nvim
+export PATH="$PATH:$USB_DRIVE/env/nvim-win64/bin"
+export XDG_CONFIG_HOME="$USB_DRIVE/env/nvim-win64/nvim-data/config"
+export XDG_DATA_HOME="$USB_DRIVE/env/nvim-win64/nvim-data/data"
+export XDG_STATE_HOME="$USB_DRIVE/env/nvim-win64/nvim-data/state"
+export XDG_CACHE_HOME="$USB_DRIVE/env/nvim-win64/nvim-data/cache"
+
+#bun environment
+export BUN_CONFIG_CONDITIONS="node"
+export BUN_FEATURE_FLAG_DISABLE_NATIVE_DEPENDENCY_LINKER=1
+export BUN_INSTALL_CACHE_DIR="$USB_DRIVE/env/bun/bun-cache"
+export PATH="$PATH:$USB_DRIVE/env/bun/bun-windows-x64"
+
+# git and the GNU tools that git-bash gave you for free (grep, less, ssh ...)
+export PATH="$PATH:$USB_DRIVE/env/PortableGit/cmd:$USB_DRIVE/env/PortableGit/mingw64/bin:$USB_DRIVE/env/PortableGit/usr/bin"
