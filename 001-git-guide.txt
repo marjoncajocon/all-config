@@ -23,3 +23,40 @@ git checkout <hash number> : ex: git checkout a1b2c3d
 
 # go back the the present commit or the latest commit
 git checkout <branch_name>
+
+
+
+/// full the folder from the other branch
+# 1. Switch to your master branch
+git checkout master
+
+# 2. Pull the folder from the other branch
+git checkout <other_branch_name> -- path/to/folder
+
+# 3. Stage and commit the copied folder
+git add path/to/folder
+git commit -m "Copy folder from <other_branch_name>"
+
+
+//// fulling using the commit hash
+# 1. Switch to your master branch
+git checkout master
+
+# 2. Pull the folder from a specific commit hash
+git checkout 1a2b3c4f -- path/to/folder
+
+# 3. Stage and commit the changes
+git add path/to/folder
+git commit -m "Copy folder from commit 1a2b3c4f"
+
+
+///// pulling file specific file: 
+# 1. Switch to your master branch
+git checkout master
+
+# 2. Pull the specific file from the commit hash or branch
+git checkout 1a2b3c4f -- path/to/file.txt
+
+# 3. Stage and commit
+git add path/to/file.txt
+git commit -m "Copy file.txt from commit 1a2b3c4f"
