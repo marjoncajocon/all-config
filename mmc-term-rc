@@ -35,6 +35,7 @@ export PATH="$PATH:$USB_DRIVE/env/mariadb-10.11.14-winx64/mariadb-10.11.14-winx6
 export PATH="$PATH:$USB_DRIVE/env/node/node-v22.22.2-win-x64"
 export PATH="$PATH:$USB_DRIVE/env/python/python-3.9.10.amd64"
 export PATH="$PATH:$USB_DRIVE/env/python/python-3.9.10.amd64/Scripts"
+export PATH="$PATH:$USB_DRIVE/env/nuget/7.9.0.83"
 
 #export CC="zig cc -target x86_64-windows.7-gnu"
 #export CXX="zig c++ -target x86_64-windows.7-gnu"
@@ -91,13 +92,6 @@ export PATH="$PATH:$PUB_CACHE/bin"
 # bin/ has code.cmd, the real command line launcher ("code ." returns at
 # once). It goes in FRONT of PATH: the VSCode folder itself (Code.exe) is
 # already in the Windows PATH and would win otherwise.
-export PATH="$USB_DRIVE/mmc-shell/home/marjoncajocon/app/VSCode-win32-x64-1.119.0/bin:$PATH"
-export PATH="$PATH:$USB_DRIVE/mmc-shell/home/marjoncajocon/app/VSCode-win32-x64-1.119.0"
-# claude code in terminal mode in vscode
-export PATH="$PATH:$USB_DRIVE/mmc-shell/home/marjoncajocon/app/VSCode-win32-x64-1.119.0/data/extensions/anthropic.claude-code-2.1.273-win32-x64/resources/native-binary"
-
-export PATH="$PATH:$USB_DRIVE/mmc-shell/home/marjoncajocon/app/Zed_123"
-export PATH="$PATH:$USB_DRIVE/mmc-shell/home/marjoncajocon/app/sublime_merge_build_2125_x64"
 
 # npm overide environment
 export npm_config_cache="$USB_DRIVE/env/node/npm-home/npm-cache"
@@ -120,4 +114,8 @@ export BUN_INSTALL_CACHE_DIR="$USB_DRIVE/env/bun/bun-cache"
 export PATH="$PATH:$USB_DRIVE/env/bun/bun-windows-x64"
 
 # git and the GNU tools that git-bash gave you for free (grep, less, ssh ...)
-export PATH="$PATH:$USB_DRIVE/env/PortableGit/cmd:$USB_DRIVE/env/PortableGit/mingw64/bin:$USB_DRIVE/env/PortableGit/usr/bin"
+export PATH="$PATH:$USB_DRIVE/env/PortableGit/cmd"
+
+# vim: vim.exe is in /usr/bin, its runtime (syntax, colors, help) here
+export VIM="/usr/share/vim"
+export VIMRUNTIME="/usr/share/vim/vim92"
