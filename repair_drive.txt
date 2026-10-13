@@ -1,0 +1,2 @@
+# where D: is the drive letter
+chkdsk D: /f /r /x
